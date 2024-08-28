@@ -30,13 +30,13 @@ int main(){
     char user;
     int random ; 
     char ans[50];
-    int user_score;
-    int computer_score;
+    int user_score = 0;
+    int computer_score = 0;
 
     for (int i = 0 ; i < 100 ; i++)
     {
-            printf("Please enter \t\t User:%d   Computer:%d\n r for rock \n p for paper \n s for scissor\n e for exit:\n",user_score,computer_score);
-    scanf("%c",&user);
+            printf("\n\nPlease enter \t\t User:%d   Computer:%d\n r for rock \n p for paper \n s for scissor\n e for exit:\n",user_score,computer_score);
+    scanf(" %c",&user);
 
     srand(time(NULL));
     random = rand() %(3)+1;
